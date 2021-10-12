@@ -19,7 +19,7 @@ st.title("Stocks Prediction Application")
 #OR we can let users to input a correct stock
 stocks = ("AAPL","GOOG","MSFT", "GME", "SENS", "AMC")
 user_input = st.text_input("Enter Your Stock: ")
-stocks.append(user_input)
+stocks = stocks + (user_input,)
 #selecting box for select the stock you interested
 selected_stock = st.selectbox("Select the stock you want to predict: ", stocks)
 
